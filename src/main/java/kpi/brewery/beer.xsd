@@ -1,0 +1,65 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="brewery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="beer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ai">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="manufacturer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chars">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="char">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="value" maxOccurs="1" minOccurs="1">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="name"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ingridients">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ingridient">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="name" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,59 @@
+<brewery>
+    <beer name="Hoegaarden">
+        <type>White</type>
+        <ai>Yes</ai>
+        <manufacturer>Hoegaarden</manufacturer>
+        <ingridients>
+            <ingridient>Water</ingridient>
+            <ingridient>Brewing barley malt</ingridient>
+            <ingridient>Wheat</ingridient>
+            <ingridient>Coriander</ingridient>
+            <ingridient>Orange peel</ingridient>
+            <ingridient>Apple pectin</ingridient>
+            <ingridient>Hops</ingridient>
+        </ingridients>
+        <chars>
+            <char name="Strength">
+                <value>4.6%</value>
+            </char>
+            <char name="Transparency">
+                <value>75%</value>
+            </char>
+            <char name="Filtered">
+                <value>No</value>
+            </char>
+            <char name="Nutritional">
+                <value>45 kcal per 100 grams of product</value>
+            </char>
+        </chars>
+    </beer>
+    <beer name="Corona">
+        <type>Light</type>
+        <ai>Yes</ai>
+        <manufacturer>Corona</manufacturer>
+        <ingridients>
+            <ingridient>Water</ingridient>
+            <ingridient>Brewing barley malt</ingridient>
+            <ingridient>Wheat</ingridient>
+            <ingridient>Hops</ingridient>
+        </ingridients>
+        <chars>
+            <char>
+                <name>Strength</name>
+                <value>2.5%</value>
+            </char>
+            <char>
+                <name>Transparency</name>
+                <value>85%</value>
+            </char>
+            <char>
+                <name>Filtered</name>
+                <value>Yes</value>
+            </char>
+            <char>
+                <name>The nutritional value</name>
+                <value>27 kcal per 100 grams of product</value>
+            </char>
+        </chars>
+    </beer>
+</brewery>
